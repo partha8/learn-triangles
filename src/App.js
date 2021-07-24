@@ -6,7 +6,6 @@ import Area from "./components/Area";
 import Hypotenuse from "./components/Hypotenuse";
 import Quiz from "./components/Quiz";
 import Footer from "./components/Footer";
-import Error from "./components/Error";
 
 function App() {
   return (
@@ -27,9 +26,6 @@ function App() {
           </Route>
           <Route path="/quiz">
             <Quiz />
-          </Route>
-          <Route path="*">
-            <Error />
           </Route>
         </Switch>
         <Footer />
