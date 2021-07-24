@@ -82,8 +82,9 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  margin-bottom: 1rem;
+  color: var(--clr-primary-1);
+  font-weight: 600;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -107,6 +108,15 @@ p {
   h4 {
     line-height: 1;
   }
+}
+.go-back {
+  color: var(--clr-primary-1);
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1px solid var(--clr-primary-1);
+  border-radius: 10px;
+  width: 100px;
+  margin: 0 auto;
 }
 .App {
   height: 100vh;
@@ -139,6 +149,109 @@ p {
   font-size: 1.2rem;
   cursor: pointer;
 }
-@media screen and (max-width: 500px) {
+.btn {
+  font-size: 1.2rem;
+  padding: 8px;
+  border-radius: var(--radius);
+  outline: none;
+  border: none;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-white);
+}
+.container {
+  max-width: 700px;
+  margin: 1rem auto;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+article {
+  margin-top: 1rem;
+}
+.section-intro {
+  color: var(--clr-primary-1);
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+.img {
+  width: 50%;
 }
 
+/* angles.js */
+
+.angle-input {
+  width: 100px;
+  height: 50px;
+  margin-left: 3px;
+  text-align: center;
+}
+.result-angle {
+  width: 50%;
+  margin: 1rem auto;
+  height: 50px;
+}
+.answer {
+  padding: 5px;
+  font-weight: 600;
+  height: auto;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 500px;
+  margin: 0.5rem auto;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: var(--clr-primary-1);
+}
+.area-images img {
+  width: 60%;
+}
+input[type="radio"] {
+  border: 0px;
+  width: 30px;
+  height: 16px;
+}
+.area-btn {
+  width: 100px;
+}
+span {
+  margin-left: 5px;
+}
+
+/* quiz */
+.quiz-section {
+  border: 1px solid black;
+  padding: 1rem;
+}
+.question-section {
+  margin: 1rem;
+  padding: 0.8rem;
+}
+.question-count {
+  font-weight: 700;
+}
+.option-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.option-btn {
+  margin: 4px;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .option-container {
+    flex-direction: column;
+  }
+}
